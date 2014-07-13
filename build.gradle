@@ -1,8 +1,13 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = "Percolation"
+mainClassName = "PercolationStats"
 
+run {
+    if(project.hasProperty('args')){
+        args project.args.split('\\s+')
+    }
+}
 
 sourceCompatibility = 1.5
 version = '1.0'

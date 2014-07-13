@@ -5,7 +5,21 @@ public class PercolationStats {
 
     private double[] percolationResults;
 
-    public static void main(String[] args){}
+    public static void main(String[] args){
+
+        StdOut.println("Running Monte Carlo Experiment for Percolation");
+
+        if ( args.length < 2 ){
+            StdOut.println("You have to supply both N grid size and T experiment size");
+            return;
+        }
+
+        PercolationStats stats = new PercolationStats(Integer.valueOf(args[0]), Integer.valueOf(args[1]) );
+
+        StdOut.println("mean = " + stats.mean());
+        StdOut.println("stddev = " + stats.stddev());
+        StdOut.println("95% confidence interval = " + stats.confidenceLo() + ", " + stats.confidenceHi());
+    }
 
     public PercolationStats(int N, int T){
 
@@ -29,6 +43,8 @@ public class PercolationStats {
                 int i = StdRandom.uniform(N) + 1;
                 int j = StdRandom.uniform(N) + 1;
 
+                StdOut.println("opening another site at: " + i + ", " + j);
+
                 percolation.open(i,j);
 
                 //open the site
@@ -40,9 +56,6 @@ public class PercolationStats {
             experimentCount++;
         }
 
-        StdOut.println("mean = " + mean());
-        StdOut.println("stddev = " + stddev());
-        StdOut.println("95% confidence interval = " + confidenceLo() + ", " + confidenceHi());
     }
     public double mean(){
         double sum = 0.0;
@@ -57,7 +70,7 @@ public class PercolationStats {
         double mean = mean();
         double devSum = 0.0;
         for ( int i = 0; i < percolationResults.length; i++ ){
-            double deviation = Math.pow(percolationResults[i] - mean,2);
+            double deviation = Math.pow(percolationResults[i] - mean, 2);
             devSum += deviation;
         }
 
