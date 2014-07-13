@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0855ae61-c43b-45b2-a23b-c47147b71b95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/algs4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/stdlib.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Percolation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/percolation.iml" afterPath="$PROJECT_DIR$/percolation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Percolation.java" afterPath="$PROJECT_DIR$/src/main/java/Percolation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="percolation.iws" />
@@ -75,20 +69,13 @@
       <file leaf-file-name="Percolation.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Percolation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46532845" vertical-offset="0" max-vertical-offset="720">
-              <caret line="17" column="72" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state vertical-scroll-proportion="-0.26277372" vertical-offset="594" max-vertical-offset="1425">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#789#790#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1066#1067#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
+                <element signature="e#2439#2440#0" expanded="true" />
+                <element signature="e#2484#2485#0" expanded="true" />
+                <element signature="e#2677#2678#0" expanded="true" />
+                <element signature="e#2767#2768#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +94,8 @@
       <file leaf-file-name="WeightedQuickUnionUF.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/libs/algs4.jar!/WeightedQuickUnionUF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1725">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="1725">
+              <caret line="63" column="57" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -158,7 +145,7 @@
               <option name="externalSystemIdString" value="GRADLE" />
               <option name="taskNames">
                 <list>
-                  <option value="run" />
+                  <option value="compileJava" />
                 </list>
               </option>
             </ExternalSystemSettings>
@@ -172,7 +159,7 @@
               <option name="externalSystemIdString" value="GRADLE" />
               <option name="taskNames">
                 <list>
-                  <option value="compileJava" />
+                  <option value="run" />
                 </list>
               </option>
             </ExternalSystemSettings>
@@ -542,7 +529,7 @@
       <recent name="$PROJECT_DIR$/libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.percolation [run]">
+  <component name="RunManager" selected="Gradle.percolation [compileJava]">
     <configuration default="false" name="percolation [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -880,8 +867,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.percolation [run]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.percolation [compileJava]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.percolation [compileJava]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.percolation [run]" />
         <item index="2" class="java.lang.String" itemvalue="Gradle.percolation [build]" />
       </list>
     </recent_temporary>
@@ -899,12 +886,17 @@
       <changelist id="0855ae61-c43b-45b2-a23b-c47147b71b95" name="Default" comment="" />
       <created>1405235658470</created>
       <updated>1405235658470</updated>
-      <workItem from="1405235666044" duration="3099000" />
+      <workItem from="1405235666044" duration="5435000" />
     </task>
+    <task id="LOCAL-00001" summary="very basic setup">
+      <created>1405238789780</created>
+      <updated>1405238789780</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3099000" />
+    <option name="totallyTimeSpent" value="5435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1550" height="977" extended-state="0" />
@@ -923,6 +915,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16047746" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -953,6 +946,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="very basic setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="very basic setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -974,6 +969,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9" vertical-offset="0" max-vertical-offset="330">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/algs4.jar!/WeightedQuickUnionUF.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="375">
@@ -984,36 +987,21 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/algs4.jar!/WeightedQuickUnionUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1725">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9" vertical-offset="0" max-vertical-offset="330">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="1725">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Percolation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46532845" vertical-offset="0" max-vertical-offset="720">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state vertical-scroll-proportion="-0.26277372" vertical-offset="594" max-vertical-offset="1425">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#2439#2440#0" expanded="true" />
+            <element signature="e#2484#2485#0" expanded="true" />
+            <element signature="e#2677#2678#0" expanded="true" />
+            <element signature="e#2767#2768#0" expanded="true" />
           </folding>
         </state>
       </provider>
