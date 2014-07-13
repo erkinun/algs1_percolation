@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0855ae61-c43b-45b2-a23b-c47147b71b95" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Percolation.java" afterPath="$PROJECT_DIR$/src/main/java/Percolation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PercolationStats.java" afterPath="$PROJECT_DIR$/src/main/java/PercolationStats.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="percolation.iws" />
@@ -71,8 +68,8 @@
       <file leaf-file-name="Percolation.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Percolation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51277375" vertical-offset="304" max-vertical-offset="1530">
-              <caret line="39" column="41" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.81386864" vertical-offset="304" max-vertical-offset="1530">
+              <caret line="50" column="66" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="e#2604#2605#0" expanded="true" />
                 <element signature="e#2649#2650#0" expanded="true" />
@@ -942,7 +939,7 @@
       <changelist id="0855ae61-c43b-45b2-a23b-c47147b71b95" name="Default" comment="" />
       <created>1405235658470</created>
       <updated>1405235658470</updated>
-      <workItem from="1405235666044" duration="11182000" />
+      <workItem from="1405235666044" duration="11432000" />
     </task>
     <task id="LOCAL-00001" summary="very basic setup">
       <created>1405238789780</created>
@@ -960,11 +957,15 @@
       <created>1405247459234</created>
       <updated>1405247459234</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="last version">
+      <created>1405249900770</created>
+      <updated>1405249900770</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11182000" />
+    <option name="totallyTimeSpent" value="11432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="138" y="22" width="1550" height="977" extended-state="0" />
@@ -1018,7 +1019,8 @@
     <MESSAGE value="first part done" />
     <MESSAGE value="simple experiment and PercolationStats" />
     <MESSAGE value="stats crude" />
-    <option name="LAST_COMMIT_MESSAGE" value="stats crude" />
+    <MESSAGE value="last version" />
+    <option name="LAST_COMMIT_MESSAGE" value="last version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1098,8 +1100,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Percolation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51277375" vertical-offset="304" max-vertical-offset="1530">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.81386864" vertical-offset="304" max-vertical-offset="1530">
+          <caret line="50" column="66" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="e#2604#2605#0" expanded="true" />
             <element signature="e#2649#2650#0" expanded="true" />
