@@ -14,8 +14,8 @@ public class Percolation {
     public static void main(String[] args){
         StdOut.println("using StdOut");
         Percolation percolation = new Percolation(5);
-        StdOut.println(percolation.xyTo1D(0, 0));
-        StdOut.println(percolation.xyTo1D(4,4));
+        StdOut.println(percolation.xyTo1D(1, 1));
+        StdOut.println(percolation.xyTo1D(5,5));
     }
 
     private int xyTo1D(int x, int y){
