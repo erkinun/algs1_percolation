@@ -16,17 +16,12 @@ public class Percolation {
         Percolation percolation = new Percolation(5);
         StdOut.println(percolation.xyTo1D(1, 1));
         StdOut.println(percolation.xyTo1D(5,5));
-    }
 
-    private int xyTo1D(int x, int y){
-        //works for 1 to N
-
-        if ( x < 1 || x > rowLength) { throw new IndexOutOfBoundsException("x was out bounds: " + x); }
-        if ( y < 1 || y > rowLength) { throw new IndexOutOfBoundsException("y was out bounds: " + y); }
-
-        x = x - 1;
-        y = y - 1;
-        return x + (y * rowLength) + 1;
+        StdOut.println("1,2 open: " + percolation.isOpen(1,2));
+        StdOut.println("1,3 open: " + percolation.isOpen(1,3));
+        StdOut.println("1,4 open: " + percolation.isOpen(1,4));
+        StdOut.println("1,5 open: " + percolation.isOpen(1,5));
+        StdOut.println("1,6 open: " + percolation.isOpen(1,6));
     }
 
     public Percolation(int N){
@@ -91,6 +86,22 @@ public class Percolation {
     }
     public boolean percolates(){
         return quickUnionUF.connected(0, gridSize + 1); //top and bottom connected?
+    }
+
+
+    private int xyTo1D(int x, int y){
+        //works for 1 to N
+
+        validateIndices(x, y);
+
+        x = x - 1;
+        y = y - 1;
+        return x + (y * rowLength) + 1;
+    }
+
+    private void validateIndices(int x, int y) {
+        if ( x < 1 || x > rowLength + 1) { throw new IndexOutOfBoundsException("x was out bounds: " + x); }
+        if ( y < 1 || y > rowLength + 1) { throw new IndexOutOfBoundsException("y was out bounds: " + y); }
     }
 
 }
