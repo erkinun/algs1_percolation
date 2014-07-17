@@ -17,11 +17,11 @@ public class Percolation {
         StdOut.println(percolation.xyTo1D(1, 1));
         StdOut.println(percolation.xyTo1D(5,5));
 
-        StdOut.println("1,2 open: " + percolation.isOpen(1,2));
-        StdOut.println("1,3 open: " + percolation.isOpen(1,3));
-        StdOut.println("1,4 open: " + percolation.isOpen(1,4));
-        StdOut.println("1,5 open: " + percolation.isOpen(1,5));
-        StdOut.println("1,6 open: " + percolation.isOpen(1,6));
+        StdOut.println("1,2 open: " + percolation.isOpen(1,1));
+        StdOut.println("1,3 open: " + percolation.isOpen(1,2));
+        StdOut.println("1,4 open: " + percolation.isOpen(1,3));
+        StdOut.println("1,5 open: " + percolation.isOpen(1,4));
+        StdOut.println("1,6 open: " + percolation.isOpen(1,5));
     }
 
     public Percolation(int N){
@@ -38,9 +38,11 @@ public class Percolation {
         for(int i = 1; i <= N; i++){
             //connect top
             quickUnionUF.union(0,i);
+            openSites[i] = true;
             //connect bottom
             int bottomRow = N * (N-1);
             quickUnionUF.union(gridSize-1, bottomRow + i );
+            openSites[bottomRow + i] = true;
         }
 
     }
@@ -76,6 +78,7 @@ public class Percolation {
 
     }
     public boolean isOpen(int i, int j){
+        //return quickUnionUF.connected(i, j);
         return openSites[xyTo1D(i,j)];
     }
     public boolean isFull(int i, int j){
@@ -96,7 +99,12 @@ public class Percolation {
 
         x = x - 1;
         y = y - 1;
-        return x + (y * rowLength) + 1;
+        int index = y + (x * rowLength) + 1;
+
+
+        System.out.println("converted to: " + index );
+
+        return index;
     }
 
     private void validateIndices(int x, int y) {
