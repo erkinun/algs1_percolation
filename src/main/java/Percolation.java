@@ -17,14 +17,12 @@ public class Percolation {
         StdOut.println(percolation.xyTo1D(1, 1));
         StdOut.println(percolation.xyTo1D(5,5));
 
-        StdOut.println("1,2 open: " + percolation.isOpen(1,1));
-        StdOut.println("1,3 open: " + percolation.isOpen(1, 2));
-        StdOut.println("1,4 open: " + percolation.isOpen(1, 3));
-        StdOut.println("1,5 open: " + percolation.isOpen(1, 4));
-        StdOut.println("1,6 open: " + percolation.isOpen(1, 5));
-
         StdOut.println("(1,1) and (1,2) connected: " +
                 percolation.quickUnionUF.connected(percolation.xyTo1D(1,1), percolation.xyTo1D(1,2)));
+
+        StdOut.println("(5,5) and bottom point connected: " + percolation.quickUnionUF.connected(
+                percolation.xyTo1D(5,5), 26
+        ));
     }
 
     public Percolation(int N){
@@ -44,7 +42,7 @@ public class Percolation {
             openSites[i] = true;
             //connect bottom
             int bottomRow = N * (N-1);
-            quickUnionUF.union(gridSize-1, bottomRow + i );
+            quickUnionUF.union(gridSize+1, bottomRow + i );
             openSites[bottomRow + i] = true;
         }
 
