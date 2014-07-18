@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = "Percolation"
+mainClassName = "PercolationVisualizer"
 
 run {
     if(project.hasProperty('args')){

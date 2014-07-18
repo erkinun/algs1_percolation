@@ -18,10 +18,13 @@ public class Percolation {
         StdOut.println(percolation.xyTo1D(5,5));
 
         StdOut.println("1,2 open: " + percolation.isOpen(1,1));
-        StdOut.println("1,3 open: " + percolation.isOpen(1,2));
-        StdOut.println("1,4 open: " + percolation.isOpen(1,3));
-        StdOut.println("1,5 open: " + percolation.isOpen(1,4));
-        StdOut.println("1,6 open: " + percolation.isOpen(1,5));
+        StdOut.println("1,3 open: " + percolation.isOpen(1, 2));
+        StdOut.println("1,4 open: " + percolation.isOpen(1, 3));
+        StdOut.println("1,5 open: " + percolation.isOpen(1, 4));
+        StdOut.println("1,6 open: " + percolation.isOpen(1, 5));
+
+        StdOut.println("(1,1) and (1,2) connected: " +
+                percolation.quickUnionUF.connected(percolation.xyTo1D(1,1), percolation.xyTo1D(1,2)));
     }
 
     public Percolation(int N){
@@ -99,12 +102,8 @@ public class Percolation {
 
         x = x - 1;
         y = y - 1;
-        int index = y + (x * rowLength) + 1;
 
-
-        System.out.println("converted to: " + index );
-
-        return index;
+        return y + (x * rowLength) + 1;
     }
 
     private void validateIndices(int x, int y) {
