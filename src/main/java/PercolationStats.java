@@ -43,39 +43,24 @@ public class PercolationStats {
                 int i = StdRandom.uniform(N) + 1;
                 int j = StdRandom.uniform(N) + 1;
 
-                StdOut.println("opening another site at: " + i + ", " + j);
-
                 percolation.open(i,j);
 
                 //open the site
                 openSiteCount++;
             }
 
-            double percolationThreshold = openSiteCount / (N*N);
+            double percolationThreshold = (double)openSiteCount / (double)(N*N);
+
             percolationResults[experimentCount] = percolationThreshold;
             experimentCount++;
         }
 
     }
     public double mean(){
-        double sum = 0.0;
-        for ( int i = 0; i < percolationResults.length; i++ ){
-            sum += percolationResults[i];
-        }
-
-        return sum / percolationResults.length;
+        return StdStats.mean(percolationResults);
     }
     public double stddev(){
-
-        double mean = mean();
-        double devSum = 0.0;
-        for ( int i = 0; i < percolationResults.length; i++ ){
-            double deviation = Math.pow(percolationResults[i] - mean, 2);
-            devSum += deviation;
-        }
-
-        double devSq = devSum / percolationResults.length - 1;
-        return Math.sqrt(devSq);
+        return StdStats.stddev(percolationResults);
     }
     public double confidenceLo(){
         double mean = mean();
